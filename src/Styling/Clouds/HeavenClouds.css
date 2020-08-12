@@ -17,8 +17,8 @@
     position: absolute;
     bottom: 0;
     max-width: 100%;
-    filter: sepia(100%) saturate(500%) hue-rotate(120deg) contrast(50%);
     animation: animateBottom calc(3s * var(--i)) linear infinite;
+    transition: 1s ease-in-out;
 }
 
 .heavenClouds.top img {
@@ -93,4 +93,9 @@
 
 .cloud10 {
     --i: 6;
+}
+
+.cloud1.darkMode, .cloud2.darkMode, .cloud3.darkMode, .cloud4.darkMode, .cloud5.darkMode,
+.cloud6.darkMode, .cloud7.darkMode, .cloud8.darkMode, .cloud9.darkMode, .cloud10.darkMode {
+    filter: sepia(100%) saturate(500%) hue-rotate(120deg) contrast(50%);
 }

@@ -9,19 +9,20 @@ import Cloud5 from '../../Images/Clouds/cloud5.png';
 function HeavenClouds(props) {
     //determines if clouds are at top of screen or bottom
     const clouds = props.clouds;
+    const theme = props.theme ? 'darkMode' : 'lightMode';
 
     return (
         <div className={`heavenClouds ${clouds === 'bottom' ? 'bottom' : 'top'}`}>
-            <img src={Cloud1} alt="clouds" className="cloud1" />
-            <img src={Cloud2} alt="clouds" className="cloud2" />
-            <img src={Cloud3} alt="clouds" className="cloud3" />
-            <img src={Cloud4} alt="clouds" className="cloud4" />
-            <img src={Cloud5} alt="clouds" className="cloud5" />
-            <img src={Cloud1} alt="clouds" className="cloud6" />
-            <img src={Cloud2} alt="clouds" className="cloud7" />
-            <img src={Cloud3} alt="clouds" className="cloud8" />
-            <img src={Cloud4} alt="clouds" className="cloud9" />
-            <img src={Cloud5} alt="clouds" className="cloud10" />
+            <img src={Cloud1} alt="clouds" className={`cloud1 ${theme}`} />
+            <img src={Cloud2} alt="clouds" className={`cloud2 ${theme}`} />
+            <img src={Cloud3} alt="clouds" className={`cloud3 ${theme}`} />
+            <img src={Cloud4} alt="clouds" className={`cloud4 ${theme}`} />
+            <img src={Cloud5} alt="clouds" className={`cloud5 ${theme}`} />
+            <img src={Cloud1} alt="clouds" className={`cloud6 ${theme}`} />
+            <img src={Cloud2} alt="clouds" className={`cloud7 ${theme}`} />
+            <img src={Cloud3} alt="clouds" className={`cloud8 ${theme}`} />
+            <img src={Cloud4} alt="clouds" className={`cloud9 ${theme}`} />
+            <img src={Cloud5} alt="clouds" className={`cloud10 ${theme}`} />
         </div>
     );
 }

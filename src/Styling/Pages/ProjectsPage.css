@@ -1,3 +1,4 @@
+/* General Styling */
 .ProjectsPage {
     height: 100vh;
     width: 100%;
@@ -6,7 +7,22 @@
     position: relative;
     width: 100%;
     height: 100vh; 
-    background: url(../../Images/projectspage.jpg);
+    transition: 1s ease-in-out;
+}
+
+/* Dark Mode */
+.ProjectsPage.darkMode {
+    background: url(../../Images/darkprojectspage.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Light Mode */
+.ProjectsPage.lightMode {
+    background: url(../../Images/lightprojectspage.jpg);
     background-size: cover;
     background-position: bottom;
     display: flex;

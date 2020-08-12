@@ -1,17 +1,12 @@
+/* General Styling */ 
 .HomePage {
     height: 100vh;
     width: 100%;
     overflow-x: hidden;
-
     position: relative;
     width: 100%;
     height: 100vh; 
-    background: url(../../Images/homepage.jpg);
-    background-size: cover;
-    background-position: bottom;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    transition: 1s ease-in-out;
 }
 
 .HomePage:before {
@@ -20,5 +15,32 @@
     bottom: 0;
     width: 100%;
     height: 40px;
+}
+
+/* Dark Mode */
+.HomePage.darkMode {
+    background: url(../../Images/darkhomepage.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomePage.darkMode:before {
     background: linear-gradient(transparent, #000);
+}
+
+/* Light Mode */
+.HomePage.lightMode {
+    background: url(../../Images/lighthomepage.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomePage.lightMode:before {
+    background: linear-gradient(transparent, rgb(6, 141, 182));
 }
