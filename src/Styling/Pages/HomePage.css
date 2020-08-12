@@ -1,29 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.App {
+.HomePage {
     height: 100vh;
     width: 100%;
     overflow-x: hidden;
-}
 
-/* .banner {
     position: relative;
     width: 100%;
     height: 100vh; 
-    background: url(../Images/homepage.png);
+    background: url(../../Images/homepage.png);
     background-size: cover;
     background-position: bottom;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.banner .text {
-    position: absolute;
-    font-size: 12em;
-    color: #fff;
-} */

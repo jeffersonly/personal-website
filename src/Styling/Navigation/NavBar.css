@@ -1,0 +1,204 @@
+/* Nav Bar */
+.navbar {
+    width: 6rem;
+    height: 100vh;
+    position: fixed;
+    background-color: transparent;
+    left: 0;
+    top: 0;
+}
+
+.navbar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-item {
+    width: 100%;
+    padding: 0.25em;
+    margin-top: 4em;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* effect of underline when hovering */
+.navbar-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    font-weight: normal;
+    height: 1.5px;
+    background: white;
+    transition: width 0.6s;
+}
+
+.navbar-item:hover::after {
+    width: 100%;
+}
+
+/* move music and theme to bottom of list, bottom page */
+.navbar-item:nth-last-child(2) {
+    margin-top: auto;
+}
+
+.navbar-item:last-child {
+    margin-top: 2em;
+    padding-bottom: 2em;
+}
+
+
+/* sizing for svg icons */
+.navbar-item svg {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+/* How to change the fill for svgs, not needed as we are using colored svgs instead */
+/* .navbar-item svg.svg g {
+    fill: white;
+} */
+/* .navbar-item svg.svg path {
+    fill: white;
+} */
+
+/* General list items -- used for experience */
+.navbar-list-text {
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.navbar-item:hover .navbar-list-text {
+    text-shadow: 2px 2px 8px #fff;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.6s linear;
+}
+
+/* Navbar list item -- home */
+.navbar-list-text.home {
+    color: #a2ddfd; 
+}
+
+.navbar-item:hover .navbar-list-text.home {
+    text-shadow: 2px 2px 8px #a2ddfd;
+}
+
+.navbar-item.home::after {
+    background: #a2ddfd;
+}
+
+/* Navbar list item -- contact */
+.navbar-list-text.contact {
+    color: #5ec682; 
+}
+
+.navbar-item:hover .navbar-list-text.contact {
+    text-shadow: 2px 2px 8px #5ec682;
+}
+
+.navbar-item.contact::after {
+    background: #5ec682;
+}
+
+/* Navbar list item -- dark mode */
+.navbar-list-text.mode {
+    color: #fee97d; 
+}
+
+.navbar-item:hover .navbar-list-text.mode {
+    text-shadow: 2px 2px 8px #fee97d;
+}
+
+.navbar-item.mode::after {
+    background: #fee97d;
+}
+
+/* Applies to navburger */
+.navBurger {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    top: 15px;
+    right: 25px;
+    z-index: 10;
+    display: none;
+}
+
+.lineItem {
+    width: 2rem;
+    height: 0.35em;
+    border-radius: 10px;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+ }
+
+ .navBurger:hover {
+    cursor: pointer;
+ }
+
+ .lineItem.open {
+    background-color: white;
+ }
+
+ .lineItem.closed {
+     background-color: white;
+ }
+
+ .lineItem.open.childOne {
+     transform: rotate(45deg);
+ }
+
+ .lineItem.closed.childOne {
+    transform: rotate(0);
+}
+
+.lineItem.open.childTwo {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.lineItem.closed.childTwo {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.lineItem.open.childThree {
+    transform: rotate(-45deg);
+}
+
+.lineItem.closed.childThree {
+    transform: rotate(0);
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.75);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .navbar.closed {
+        transform: translateX(-150%);
+    }
+
+    .navbar.open {
+        transform: translateX(0);
+    }
+
+    .navBurger {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: column nowrap;
+    }
+
+    .navbar-list-text {
+        visibility: visible;
+        opacity: 1;
+    }
+}
