@@ -10,6 +10,17 @@
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 20px;
+}
+
+
 /* .banner {
     position: relative;
     width: 100%;

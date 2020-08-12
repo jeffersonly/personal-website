@@ -8,6 +8,7 @@ import {ReactComponent as MoonSVG} from '../../Images/SVGs/moon.svg';
 import {ReactComponent as SunSVG} from '../../Images/SVGs/sun.svg';
 import {ReactComponent as Music} from '../../Images/SVGs/music.svg';
 import {ReactComponent as NoMusic} from '../../Images/SVGs/nomusic.svg';
+import {ReactComponent as ResumeSVG} from '../../Images/SVGs/resume.svg';
 
 function NavBar() {
     const [open, setOpen] = useState(false);
@@ -41,6 +42,13 @@ function NavBar() {
                         <ContactSVG className="svg contact" />
                         <div className="navbar-list-text contact">
                             Contact
+                        </div>
+                    </li>
+
+                    <li className="navbar-item resume">
+                        <ResumeSVG className="resume icon" />
+                        <div className="navbar-list-text resume">
+                            Resume
                         </div>
                     </li>
 

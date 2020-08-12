@@ -1,9 +1,9 @@
 import '../Styling/App.css';
 import React from 'react';
 
-import LandingPage from './Pages/LandingPage';
 import HomePage from './Pages/HomePage';
 import ExperiencePage from './Pages/ExperiencePage';
+import ProjectPage from './Pages/ProjectsPage';
 import NavBar from './Navigation/NavBar';
 
 function App() {
@@ -15,10 +15,10 @@ function App() {
                 
                 <h1 className="text">Jefferson Ly</h1>
             </div> */}
-                
-                <LandingPage />
+
                 <HomePage />
                 <ExperiencePage />
+                <ProjectPage />
                 <NavBar />
         </div>
     );

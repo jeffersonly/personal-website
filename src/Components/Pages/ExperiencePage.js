@@ -1,11 +1,13 @@
 import '../../Styling/Pages/ExperiencePage.css';
 import React from 'react';
+import StarParticles from '../StarParticles';
 import HeavenClouds from '../Clouds/HeavenClouds';
 
 function ExperiencePage() {
     return (
         <div className="ExperiencePage">
-            <HeavenClouds clouds={"top"} />
+            <StarParticles />
+            <HeavenClouds clouds={"bottom"} />
         </div>
     );
 }
