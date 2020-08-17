@@ -10,13 +10,13 @@
     transition: 1s ease-in-out;
 }
 
-.ExperiencePage:before {
+/* .ExperiencePage:before {
     content: '';
     position: absolute;
     top: 0;
     width: 100%;
     transition: 1s ease-in-out;
-}
+} */
 
 /* Dark Mode */
 .ExperiencePage.darkMode {
@@ -28,10 +28,10 @@
     align-items: center;
 }
 
-.ExperiencePage.darkMode:before {
+/* .ExperiencePage.darkMode:before {
     height: 40px;
     background: linear-gradient(#000, transparent);
-}
+} */
 
 /* Light Mode */
 .ExperiencePage.lightMode {
@@ -43,7 +43,8 @@
     align-items: center;
 }
 
-.ExperiencePage.lightMode:before {
+/* .ExperiencePage.lightMode:before {
     height: 30px;
     background: linear-gradient(rgb(6, 141, 182), transparent);
-}
+    opacity: 0.35;
+} */

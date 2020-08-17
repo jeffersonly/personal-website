@@ -1,5 +1,6 @@
 import '../../Styling/Navigation/NavBar.css';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; //links for navigation
 
 import {ReactComponent as HomeSVG} from '../../Images/SVGs/home.svg';
 import {ReactComponent as ExperienceSVG}from '../../Images/SVGs/work.svg';
@@ -14,7 +15,9 @@ function NavBar(props) {
     const [open, setOpen] = useState(false);
     let checkOpen = open ? 'open' : 'closed'; //check if the navbar icons are open (when window is shrunk)
     let checkTheme = props.initialTheme.darkMode ? 'darkMode' : 'lightMode'; //check if its dark mode or light mode
+    let checkMusicState = props.initialMusicState.playMusic ? 'nomusic' : 'music'; //check if music enabled or not
 
+    //renders the mode icons (light/dark)
     function renderModeIcon() {
         if(!props.initialTheme.darkMode) {
             return (
@@ -37,6 +40,29 @@ function NavBar(props) {
         }
     }
 
+    //renders music icons (music on/off)
+    function renderMusicIcon() {
+        if(!props.initialMusicState.playMusic) {
+            return (
+                <>
+                    <Music className="music icon" />
+                    <div className={`navbar-list-text music ${checkTheme}`}>
+                        Play Music
+                    </div>
+                </>
+            )
+        } else {
+            return (
+                <>
+                    <NoMusic className="nomusic icon" />
+                    <div className={`navbar-list-text nomusic ${checkTheme}`}>
+                        Stop Music
+                    </div>
+                </>
+            )
+        }
+    }
+
     return (
         <div>
             <div className="navBurger" open={open} onClick={() => setOpen(!open)}>
@@ -47,18 +73,22 @@ function NavBar(props) {
             
             <div className={`navbar ${checkOpen}`}>
                 <ul className="navbar-list">
-                    <li className="navbar-item home"> 
-                        <HomeSVG className="svg home" />
-                        <div className={`navbar-list-text home ${checkTheme}`}>
-                            Home
-                        </div>
+                    <li className="navbar-item home">
+                        <Link to="/">
+                            <HomeSVG className="svg home" />
+                            <div className={`navbar-list-text home ${checkTheme}`}>
+                                Home
+                            </div>
+                        </Link> 
                     </li>
 
                     <li className="navbar-item exp"> 
-                        <ExperienceSVG className="svg exp" />
-                        <div className={`navbar-list-text experience ${checkTheme}`}>
-                            Experience
-                        </div>
+                        <Link to="experience">
+                            <ExperienceSVG className="svg exp" />
+                            <div className={`navbar-list-text experience ${checkTheme}`}>
+                                Experience
+                            </div>
+                        </Link>
                     </li>
 
                     <li className="navbar-item contact">
@@ -75,15 +105,12 @@ function NavBar(props) {
                         </div>
                     </li>
 
-                    <li className="navbar-item music"> 
-                        <Music className="music icon" />
-                        <div className={`navbar-list-text music ${checkTheme}`}>
-                            Play Music
-                        </div>
+                    <li className={`navbar-item ${checkMusicState}`} onClick={e => props.onMusicChange(e.target.value)}> 
+                        {renderMusicIcon()}
                     </li>
 
                     {/* on change event for when switch is toggled, updates parent component */}
-                    <li className="navbar-item mode" onClick={e => props.onChange(e.target.value)}> 
+                    <li className="navbar-item mode" onClick={e => props.onModeChange(e.target.value)}> 
                         {renderModeIcon()}
                     </li>
                 </ul>

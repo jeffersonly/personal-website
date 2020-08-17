@@ -9,13 +9,13 @@
     transition: 1s ease-in-out;
 }
 
-.HomePage:before {
+/* .HomePage:before {
     content: '';
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 40px;
-}
+} */
 
 /* Dark Mode */
 .HomePage.darkMode {
@@ -27,9 +27,9 @@
     align-items: center;
 }
 
-.HomePage.darkMode:before {
+/* .HomePage.darkMode:before {
     background: linear-gradient(transparent, #000);
-}
+} */
 
 /* Light Mode */
 .HomePage.lightMode {
@@ -41,6 +41,7 @@
     align-items: center;
 }
 
-.HomePage.lightMode:before {
+/* .HomePage.lightMode:before {
     background: linear-gradient(transparent, rgb(6, 141, 182));
-}
+    opacity: 0.35;
+} */
