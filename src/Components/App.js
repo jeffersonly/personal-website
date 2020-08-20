@@ -7,10 +7,7 @@ import history from './Routing/history';
 import Routing from './Routing/Routing';
 import { Router } from 'react-router-dom'; //router encapsulates all of the application (for routing)
 
-
 import storage from 'local-storage-fallback'; //used for local storage (store dark/light mode)
-
-import { AnimatePresence } from 'framer-motion'; //animate route transitions
 
 
 //get theme stored in local storage if it exists
@@ -59,15 +56,12 @@ function App() {
 
             <Router history={history}>
                 <Routing theme={theme} musicState={musicState} />
-
-                <AnimatePresence exitBeforeEnter>
-                    <NavBar 
-                        onModeChange={() => setTheme({...theme, darkMode: !theme.darkMode})}
-                        onMusicChange={() => setMusicState({...musicState, playMusic: !musicState.playMusic})} 
-                        initialTheme={theme}
-                        initialMusicState={musicState}
-                    />
-                </AnimatePresence>
+                <NavBar 
+                    onModeChange={() => setTheme({...theme, darkMode: !theme.darkMode})}
+                    onMusicChange={() => setMusicState({...musicState, playMusic: !musicState.playMusic})} 
+                    initialTheme={theme}
+                    initialMusicState={musicState}
+                />
             </Router>
         </div>
     );

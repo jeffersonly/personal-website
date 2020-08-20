@@ -74,7 +74,7 @@ function NavBar(props) {
             <div className={`navbar ${checkOpen}`}>
                 <ul className="navbar-list">
                     <li className="navbar-item home">
-                        <Link to="/">
+                        <Link to="/" className="link">
                             <HomeSVG className="svg home" />
                             <div className={`navbar-list-text home ${checkTheme}`}>
                                 Home
@@ -83,7 +83,7 @@ function NavBar(props) {
                     </li>
 
                     <li className="navbar-item exp"> 
-                        <Link to="experience">
+                        <Link to="experience" className="link">
                             <ExperienceSVG className="svg exp" />
                             <div className={`navbar-list-text experience ${checkTheme}`}>
                                 Experience
