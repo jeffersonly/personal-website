@@ -282,7 +282,11 @@
     }
 
     .navbar-item svg {
-        width: 1.8em;
-        height: 1.8em;
+        width: 1.4em;
+        height: 1.4em;
+    }
+
+    .navbar-list-text {
+        font-size: 0.75em;
     }
 }

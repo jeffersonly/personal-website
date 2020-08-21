@@ -26,7 +26,7 @@ function ExperiencePage(props) {
         if(playMusic) {
             return (
                 <audio id="music" src={HighHopes} controls autoPlay loop playsInline 
-                style={{bottom: 5, right: 5, position: 'absolute', width: '270px'}}
+                style={{bottom: 5, right: 5, position: 'fixed', width: '270px'}}
                 />
             );
         }
@@ -37,10 +37,10 @@ function ExperiencePage(props) {
             <div className={`ExperiencePage ${checkTheme}`}>
                 {getParticles()}
                 <HeavenClouds clouds={"bottom"} theme={props.theme.darkMode} />
-                {renderMusic()}
             </div>
 
             <ProjectPage theme={props.theme} />
+            {renderMusic()}
         </div>
     );
 }
