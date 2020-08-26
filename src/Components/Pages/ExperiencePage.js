@@ -55,7 +55,7 @@ function ExperiencePage(props) {
                     <ExperienceCard 
                         JobTitle="Software Engineer Testing Intern"
                         JobType="Internship"
-                        JobLocation="VIA Alliance Technologies, Inc. | Fremont, CA"
+                        JobLocation="VIA Alliance Technologies | Fremont, CA"
                         JobDate="Jan 2019 - Apr 2019"
                         BulletPointList={[
                             "Downloaded and installed software programs into different systems & motherboards",

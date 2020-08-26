@@ -65,7 +65,15 @@
     padding: 10px;
     text-align: center;
     display: block;
-    background: rgba(0, 0, 0, 0.15);
+}
+
+.text-body.lightMode {
+    background: none;
+}
+
+.text-body.darkMode {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 
 .container {

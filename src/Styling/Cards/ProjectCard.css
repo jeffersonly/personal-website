@@ -29,17 +29,17 @@
     transition: 0.5s;
 }
 
-.card .content h2.job-type {
+.card .content h2.project-type {
     right: 0.5em;
     top: 2em;
 }
 
-.card:hover .content h2.job-type {
+.card:hover .content h2.project-type {
     opacity: 1;
     transform: translateY(-15px);
 }
 
-.job-title {
+.project-title {
     font-size: 1.5em;
 }
 
@@ -50,18 +50,28 @@
     font-size: 1.15em;
 }
 
-.company-and-location {
+.technologies {
     display: flex;
     float: left;
 }
 
-.job-date {
+.project-date {
     display: flex;
     float: right;
 }
 
+.buttonContainer {
+    display: flex;
+    float: right;
+}
+
+.buttonContainer .ledButton {
+    margin-left: 10px;
+    -webkit-box-reflect: initial;
+}
+
 @media (max-width: 450px) {
-    .job-title {
+    .project-title {
         font-size: 1.25em;
     }
 
@@ -70,18 +80,19 @@
         padding-top: 35px;
     }
 
-    .company-and-location {
+    .technologies {
         padding-top: 10px;
         font-size: 1em;
         float: left;
     }
     
-    .job-date {
+    .project-date {
         font-size: 1em;
         float: left;
     }
 
-    .card .content h2.job-type {
+    .card .content h2.project-type {
         display: none;
     }
 }
+

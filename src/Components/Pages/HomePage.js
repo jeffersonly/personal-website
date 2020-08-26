@@ -11,7 +11,7 @@ function HomePage(props) {
         <>
             <div className={`HomePage ${checkTheme}`}>
                 <StarParticles />
-                <div className="text-body">
+                <div className={`text-body ${checkTheme}`}>
                     <Typed
                         className={`typedText ${checkTheme}`}
                         strings={[
