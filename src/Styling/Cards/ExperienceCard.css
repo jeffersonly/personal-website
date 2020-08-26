@@ -1,0 +1,85 @@
+.card {
+    position: relative;
+    background: rgba(0, 0, 0, 0.25);
+    width: 900px;
+    height: 150px;
+    padding: 10px 20px;
+    transition: 0.5s ease-in-out;
+    height: fit-content;
+    text-shadow: 1px 1px 30px black;
+    border-radius: 10px;
+}
+
+.card:hover {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.card .content {
+    padding: 5px;
+    color: white;
+}
+
+.card .content h2 {
+    color: white;
+    position: absolute;
+    font-size: 1em;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card .content h2.job-type {
+    right: 0.5em;
+    top: 2em;
+}
+
+.card:hover .content h2.job-type {
+    opacity: 1;
+    transform: translateY(-15px);
+}
+
+.job-title {
+    font-size: 1.65em;
+}
+
+.card .bulletpoints {
+    padding: 10px;
+    margin: 20px;
+    color: white;
+    font-size: 1.15em;
+}
+
+.company-and-location {
+    display: flex;
+    float: left;
+}
+
+.job-date {
+    display: flex;
+    float: right;
+}
+
+@media (max-width: 550px) {
+    .job-title {
+        font-size: 1.25em;
+    }
+
+    .card .bulletpoints {
+        font-size: 1em;
+        padding-top: 35px;
+    }
+
+    .company-and-location {
+        padding-top: 10px;
+        font-size: 1em;
+    }
+    
+    .job-date {
+        font-size: 1em;
+        float: left;
+    }
+
+    .card .content h2.job-type {
+        display: none;
+    }
+}

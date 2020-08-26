@@ -10,9 +10,9 @@ const Routing = (props) => {
     const location = useLocation();
     return (
         <Switch location={location} key={location.pathname}>
-            <Route path="/" exact render={() => <HomePage theme={props.theme} musicState={props.musicState} />} />
-            <Route path="/experience" exact render={() => <ExperiencePage theme={props.theme} musicState={props.musicState} />}/>
-            <Route path="/*" render={() => <HomePage theme={props.theme} musicState={props.musicState} />} />
+            <Route path="/" exact render={() => <HomePage theme={props.theme} />} />
+            <Route path="/experience" exact render={() => <ExperiencePage theme={props.theme} />}/>
+            <Route path="/*" render={() => <HomePage theme={props.theme} />} />
         </Switch>
     );
 }

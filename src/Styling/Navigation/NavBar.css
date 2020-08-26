@@ -42,8 +42,8 @@
     width: 100%;
 }
 
-/* move resume, music, and theme to bottom of list, bottom page */
-.navbar-item:nth-last-child(3) {
+/* move resume and theme to bottom of list, bottom page */
+.navbar-item:nth-last-child(2) {
     margin-top: auto;
 }
 
@@ -71,7 +71,7 @@
     }
 }
 
-.navbar-item:hover .mode.icon, .navbar-item:hover .music.icon, .navbar-item:hover .nomusic.icon, .navbar-item:hover .resume.icon {
+.navbar-item:hover .mode.icon, .navbar-item:hover .resume.icon {
     animation: rotate 1s;
 } 
 
@@ -139,32 +139,6 @@
 
 .navbar-item.contact::after {
     background: #5ec682;
-}
-
-/* Navbar list item -- music */
-.navbar-list-text.music {
-    color: #00CCB2; 
-}
-
-.navbar-item:hover .navbar-list-text.music {
-    text-shadow: 2px 2px 8px #00CCB2;
-}
-
-.navbar-item.music::after {
-    background: #00CCB2;
-}
-
-/* Navbar list item -- nomusic */
-.navbar-list-text.nomusic {
-    color: #e60303; 
-}
-
-.navbar-item:hover .navbar-list-text.nomusic {
-    text-shadow: 2px 2px 8px #e60303;
-}
-
-.navbar-item.nomusic::after {
-    background: #e60303;
 }
 
 /* Navbar list item -- dark mode */

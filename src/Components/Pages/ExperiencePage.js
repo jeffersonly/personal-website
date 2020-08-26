@@ -4,7 +4,8 @@ import StarParticles from '../Particles/StarParticles';
 import CircleParticles from '../Particles/CircleParticles';
 import HeavenClouds from '../Clouds/HeavenClouds';
 import ProjectPage from './ProjectsPage';
-import HighHopes from '../../Audio/HighHopes.mp3';
+
+import ExperienceCard from '../Cards/ExperienceCard';
 
 function ExperiencePage(props) {
     let checkTheme = props.theme.darkMode ? 'darkMode' : 'lightMode'; //check if its dark mode or light mode
@@ -20,27 +21,65 @@ function ExperiencePage(props) {
         );
     }
 
-    let playMusic = props.musicState.playMusic; //check if music is played or not
-
-    function renderMusic() {
-        if(playMusic) {
-            return (
-                <audio id="music" src={HighHopes} controls autoPlay loop playsInline 
-                style={{bottom: 5, right: 5, position: 'fixed', width: '270px'}}
-                />
-            );
-        }
-    }
-
     return (
         <div>
             <div className={`ExperiencePage ${checkTheme}`}>
                 {getParticles()}
                 <HeavenClouds clouds={"bottom"} theme={props.theme.darkMode} />
+                <h1 className="experiencePageHeaderText"><u>Work Experience</u></h1>
+                <div className="card-container">
+                    <ExperienceCard 
+                        JobTitle="Predictive Services (IoT) Software Engineering Intern"
+                        JobType="Internship"
+                        JobLocation="Concrete Shells | San Jose, CA"
+                        JobDate="Jun 2020 - Present"
+                        BulletPointList={[
+                            "In Progress..."
+                        ]}
+                    />
+                </div>
+                <div className="card-container">
+                    <ExperienceCard 
+                        JobTitle="Web Developer/Admin"
+                        JobType="Full Time"
+                        JobLocation="Concrete Shells | San Jose, CA"
+                        JobDate="May 2019 - Sep 2019"
+                        BulletPointList={[
+                            "Moved website base off of Wordpress to develop using custom code",
+                            "Created new website for company using HTML, CSS, JavaScript, Jquery, and various JS libraries",
+                            "Optimized loading/rendering times using google chrome developer tools and google page insights"
+                        ]}
+                    />
+                </div>
+                <div className="card-container">
+                    <ExperienceCard 
+                        JobTitle="Software Engineer Testing Intern"
+                        JobType="Internship"
+                        JobLocation="VIA Alliance Technologies, Inc. | Fremont, CA"
+                        JobDate="Jan 2019 - Apr 2019"
+                        BulletPointList={[
+                            "Downloaded and installed software programs into different systems & motherboards",
+                            "Black box tested computer motherboard programs UI on TVs and desktops",
+                            "Collaborated with engineers to track bugs and report them to RnD team"
+                        ]}
+                    />
+                </div>
+                <div className="card-container">
+                    <ExperienceCard 
+                        JobTitle="Front-End Developer Intern"
+                        JobType="Internship"
+                        JobLocation="Spotmesolutions LLC | San Jose, CA"
+                        JobDate="Aug 2018 - Dec 2018"
+                        BulletPointList={[
+                            "Designed and implemented UI for a mobile application",
+                            "Used expo libraries and open source github repos + libraries for some functionalities",
+                            "Built application using React.js, React Native, and Redux"
+                        ]}
+                    />
+                </div>
             </div>
 
             <ProjectPage theme={props.theme} />
-            {renderMusic()}
         </div>
     );
 }
