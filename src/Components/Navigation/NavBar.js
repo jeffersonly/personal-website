@@ -9,6 +9,8 @@ import {ReactComponent as MoonSVG} from '../../Images/SVGs/moon.svg';
 import {ReactComponent as SunSVG} from '../../Images/SVGs/sun.svg';
 import {ReactComponent as ResumeSVG} from '../../Images/SVGs/resume.svg';
 
+import Resume from '../../Resume/Resume.pdf';
+
 function NavBar(props) {
     const [open, setOpen] = useState(false);
     let checkOpen = open ? 'open' : 'closed'; //check if the navbar icons are open (when window is shrunk)
@@ -37,9 +39,17 @@ function NavBar(props) {
         }
     }
 
+    function handleResumeIconClick() {
+        window.open(Resume, '_blank');
+    }
+
+    function handleOpenCloseNav() {
+        setOpen(!open);
+    }
+
     return (
         <div>
-            <div className="navBurger" open={open} onClick={() => setOpen(!open)}>
+            <div className="navBurger" open={open} onClick={handleOpenCloseNav}>
                 <div className={`lineItem ${checkOpen} ${checkTheme} childOne`} />
                 <div className={`lineItem ${checkOpen} ${checkTheme} childTwo`} />
                 <div className={`lineItem ${checkOpen} ${checkTheme} childThree`} />
@@ -48,7 +58,7 @@ function NavBar(props) {
             <div className={`navbar ${checkOpen}`}>
                 <ul className="navbar-list">
                     <li className="navbar-item home">
-                        <Link to="/" className="link">
+                        <Link to="/" className="link" onClick={handleOpenCloseNav}>
                             <HomeSVG className="svg home" />
                             <div className={`navbar-list-text home ${checkTheme}`}>
                                 Home
@@ -57,7 +67,7 @@ function NavBar(props) {
                     </li>
 
                     <li className="navbar-item exp"> 
-                        <Link to="experience" className="link">
+                        <Link to="experience" className="link" onClick={handleOpenCloseNav}>
                             <ExperienceSVG className="svg exp" />
                             <div className={`navbar-list-text experience ${checkTheme}`}>
                                 Experience
@@ -65,14 +75,14 @@ function NavBar(props) {
                         </Link>
                     </li>
 
-                    <li className="navbar-item contact">
+                    <li className="navbar-item contact" onClick={handleOpenCloseNav}>
                         <ContactSVG className="svg contact" />
                         <div className={`navbar-list-text contact ${checkTheme}`}>
                             Contact
                         </div>
                     </li>
 
-                    <li className="navbar-item resume">
+                    <li className="navbar-item resume" onClick={handleResumeIconClick}>
                         <ResumeSVG className="resume icon" />
                         <div className={`navbar-list-text resume ${checkTheme}`}>
                             Resume

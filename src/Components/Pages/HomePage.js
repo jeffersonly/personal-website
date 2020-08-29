@@ -1,10 +1,13 @@
 import '../../Styling/Pages/HomePage.css';
-import React from 'react';
+import React, { useState } from 'react';
 import StarParticles from '../Particles/StarParticles';
 
 import Typed from 'react-typed'; //typing animation
 
+import AboutModal from '../Modals/AboutModal';
+
 function HomePage(props) {
+    const [aboutModalOpen, setAboutModalOpen] = useState(false);
     let checkTheme = props.theme.darkMode ? 'darkMode' : 'lightMode'; //check if its dark mode or light mode
 
     return (
@@ -28,7 +31,7 @@ function HomePage(props) {
                         backSpeed={85}
                     />
                     <div className="container">
-                        <div className={`ledButton ${checkTheme}`}>
+                        <div className={`ledButton ${checkTheme}`} onClick={() => setAboutModalOpen(true)}>
                             <span></span>
                             <span></span>
                             <span></span>
@@ -36,6 +39,18 @@ function HomePage(props) {
                             About Me
                         </div>
                     </div>
+
+                </div>
+
+                <div className="modal-container">
+                    { 
+                        aboutModalOpen ? 
+                        <AboutModal 
+                            modalState={aboutModalOpen} 
+                            modalStateChange={() => setAboutModalOpen(false)}
+                        /> 
+                        : null 
+                    }
                 </div>
             </div>
         </>

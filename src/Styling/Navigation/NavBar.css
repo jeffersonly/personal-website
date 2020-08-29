@@ -25,6 +25,7 @@
     display: inline-block;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* effect of underline when hovering */
