@@ -48,6 +48,7 @@ function HomePage(props) {
                         <AboutModal 
                             modalState={aboutModalOpen} 
                             modalStateChange={() => setAboutModalOpen(false)}
+                            darkMode={props.theme.darkMode}
                         /> 
                         : null 
                     }

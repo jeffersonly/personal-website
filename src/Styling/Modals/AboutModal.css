@@ -37,13 +37,22 @@
 
 .about-modal {
     position: relative;
-    background: white;
     min-height: 300px;
     min-width: 300px;
     width: 60%;
     height: fit-content;
-    border-radius: 10px;
+    border-radius: 15px;
     z-index: 10;
+    padding: 10px;
+    box-shadow: 1px 1px 10px white;
+}
+
+.about-modal.darkMode {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.about-modal.lightMode {
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .about-modal.open {
@@ -71,3 +80,90 @@
         transform: translateY(-150%);
     }
 } */
+
+.about-modal h2 {
+    padding: 10px;
+    padding-bottom: 1em;
+    font-size: 1.25em;
+}
+
+.about-modal.darkMode h2 {
+    color: white;
+}
+
+.about-modal.lightMode h2 {
+    color: black;
+}
+
+/* React Tabs CSS */
+.react-tabs {
+    -webkit-tap-highlight-color: transparent;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+.about-modal.darkMode .react-tabs {
+    color: white;
+}
+
+.about-modal.darkMode .react-tabs__tab:hover {
+    box-shadow: 1px 1px 10px white;
+}
+
+.about-modal.lightMode .react-tabs {
+    color: black;
+}
+
+.about-modal.lightMode .react-tabs__tab:hover {
+    box-shadow: 1px 1px 10px black;
+}
+
+.react-tabs__tab {
+    margin: 2px;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-bottom: none;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.react-tabs__tab--selected {
+    background: #fff;
+    color: black;
+    text-shadow: 2px 2px 15px black;
+    border-radius: 5px 5px;
+}
+
+.about-modal.darkMode .react-tabs__tab--selected {
+    box-shadow: 1px 1px 10px white;
+}
+
+.about-modal.lightMode .react-tabs__tab--selected {
+    box-shadow: 1px 1px 10px black;
+}
+
+.react-tabs__tab:focus {
+    outline: none;
+}
+
+.react-tabs__tab-panel {
+    display: none;
+}
+
+.react-tabs__tab-panel--selected {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .react-tabs {
+        font-size: 1.1em;
+    }
+
+    .about-modal h2 {
+        font-size: 1em;
+    }
+}

@@ -57,38 +57,36 @@ function NavBar(props) {
             
             <div className={`navbar ${checkOpen}`}>
                 <ul className="navbar-list">
-                    <li className="navbar-item home">
-                        <Link to="/" className="link" onClick={handleOpenCloseNav}>
-                            <HomeSVG className="svg home" />
-                            <div className={`navbar-list-text home ${checkTheme}`}>
-                                Home
+                    <Link to="/" className="link" onClick={handleOpenCloseNav}>
+                        <li className="navbar-item home">
+                                <HomeSVG className="svg home" />
+                                <div className={`navbar-list-text home ${checkTheme}`}>
+                                    Home
+                                </div>
+                        </li>
+                    </Link> 
+                    <Link to="experience" className="link" onClick={handleOpenCloseNav}>
+                        <li className="navbar-item exp"> 
+                                <ExperienceSVG className="svg exp" />
+                                <div className={`navbar-list-text experience ${checkTheme}`}>
+                                    Experience
+                                </div>
+                        </li>
+                    </Link>
+                    <Link to="/contact" className="link" onClick={handleOpenCloseNav}>
+                        <li className="navbar-item contact" onClick={handleOpenCloseNav}>
+                            <ContactSVG className="svg contact" />
+                            <div className={`navbar-list-text contact ${checkTheme}`}>
+                                Contact
                             </div>
-                        </Link> 
-                    </li>
-
-                    <li className="navbar-item exp"> 
-                        <Link to="experience" className="link" onClick={handleOpenCloseNav}>
-                            <ExperienceSVG className="svg exp" />
-                            <div className={`navbar-list-text experience ${checkTheme}`}>
-                                Experience
-                            </div>
-                        </Link>
-                    </li>
-
-                    <li className="navbar-item contact" onClick={handleOpenCloseNav}>
-                        <ContactSVG className="svg contact" />
-                        <div className={`navbar-list-text contact ${checkTheme}`}>
-                            Contact
-                        </div>
-                    </li>
-
+                        </li>
+                    </Link>
                     <li className="navbar-item resume" onClick={handleResumeIconClick}>
                         <ResumeSVG className="resume icon" />
                         <div className={`navbar-list-text resume ${checkTheme}`}>
                             Resume
                         </div>
                     </li>
-
                     {/* on change event for when switch is toggled, updates parent component */}
                     <li className="navbar-item mode" onClick={e => props.onModeChange(e.target.value)}> 
                         {renderModeIcon()}

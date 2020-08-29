@@ -186,11 +186,6 @@
      background-color: white;
  }
 
- .lineItem.lightMode {
-     background-color: black;
-     box-shadow: 1px 1px 25px white;
- }
-
  .lineItem.open.childOne {
      transform: rotate(45deg);
  }
