@@ -37,7 +37,7 @@ function ContactPage(props) {
                     <div className="row100">
                         <div className="col">
                             <div className="inputBox">
-                                <input type="text" name="" required="required"></input>
+                                <input type="text" name="email" id="email" required="required"></input>
                                 <span className="text">Email</span>
                                 <span className="line"></span>
                             </div>
@@ -46,7 +46,7 @@ function ContactPage(props) {
                     <div className="row100">
                         <div className="col">
                             <div className="inputBox">
-                                <input type="text" name="" required="required"></input>
+                                <input type="text" name="name" id="name" required="required"></input>
                                 <span className="text">Name</span>
                                 <span className="line"></span>
                             </div>
@@ -55,7 +55,7 @@ function ContactPage(props) {
                     <div className="row100">
                         <div className="col">
                             <div className="inputBox textarea">
-                                <textarea required="required"></textarea>
+                                <textarea name="message" type="text" id="message" required="required"></textarea>
                                 <span className="text">Type your message</span>
                                 <span className="line"></span>
                             </div>
