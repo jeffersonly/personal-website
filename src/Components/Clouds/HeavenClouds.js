@@ -1,5 +1,5 @@
 import '../../Styling/Clouds/HeavenClouds.css'; //css file
-import React, {useState} from 'react';
+import React from 'react';
 import Cloud1 from '../../Images/Clouds/cloud1.png';
 import Cloud2 from '../../Images/Clouds/cloud2.png';
 import Cloud3 from '../../Images/Clouds/cloud3.png';
