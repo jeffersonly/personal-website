@@ -238,7 +238,11 @@
     }
 
     .navbar-item {
-        margin-top: 1.5em;
+        margin-top: 2em;
+    }
+
+    .navbar-item:nth-last-child(2) {
+        margin-top: 12em;
     }
 }
 
