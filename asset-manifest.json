@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/portfolio-website/static/css/main.bd56963a.chunk.css",
+    "main.js": "/portfolio-website/static/js/main.e5361975.chunk.js",
+    "main.js.map": "/portfolio-website/static/js/main.e5361975.chunk.js.map",
+    "runtime-main.js": "/portfolio-website/static/js/runtime-main.3b1c52a1.js",
+    "runtime-main.js.map": "/portfolio-website/static/js/runtime-main.3b1c52a1.js.map",
+    "static/js/2.1a45c695.chunk.js": "/portfolio-website/static/js/2.1a45c695.chunk.js",
+    "static/js/2.1a45c695.chunk.js.map": "/portfolio-website/static/js/2.1a45c695.chunk.js.map",
+    "index.html": "/portfolio-website/index.html",
+    "precache-manifest.9c38d9c64abb169e98b6c1c28ffb04ef.js": "/portfolio-website/precache-manifest.9c38d9c64abb169e98b6c1c28ffb04ef.js",
+    "service-worker.js": "/portfolio-website/service-worker.js",
+    "static/css/main.bd56963a.chunk.css.map": "/portfolio-website/static/css/main.bd56963a.chunk.css.map",
+    "static/js/2.1a45c695.chunk.js.LICENSE.txt": "/portfolio-website/static/js/2.1a45c695.chunk.js.LICENSE.txt",
+    "static/media/Resume.pdf": "/portfolio-website/static/media/Resume.4e6a80b0.pdf",
+    "static/media/cloud1.png": "/portfolio-website/static/media/cloud1.2167fed1.png",
+    "static/media/cloud2.png": "/portfolio-website/static/media/cloud2.41d1e779.png",
+    "static/media/cloud3.png": "/portfolio-website/static/media/cloud3.7c878e08.png",
+    "static/media/cloud4.png": "/portfolio-website/static/media/cloud4.ea046c5c.png",
+    "static/media/cloud5.png": "/portfolio-website/static/media/cloud5.34ae4c87.png",
+    "static/media/ContactPage.css": "/portfolio-website/static/media/contact.7916575f.jpg",
+    "static/media/contact.bb4ec9de.svg": "/portfolio-website/static/media/contact.bb4ec9de.svg",
+    "static/media/ExperiencePage.css": "/portfolio-website/static/media/lightexperiencepage.2c0b5464.jpg",
+    "static/media/HomePage.css": "/portfolio-website/static/media/lighthomepage.c1639379.jpg",
+    "static/media/ProjectsPage.css": "/portfolio-website/static/media/lightprojectspage.09d7545e.jpg",
+    "static/media/home.69c7ed4d.svg": "/portfolio-website/static/media/home.69c7ed4d.svg",
+    "static/media/moon.a6224093.svg": "/portfolio-website/static/media/moon.a6224093.svg",
+    "static/media/resume.d6b173e4.svg": "/portfolio-website/static/media/resume.d6b173e4.svg",
+    "static/media/sun.696d1dd7.svg": "/portfolio-website/static/media/sun.696d1dd7.svg",
+    "static/media/work.1eb06c16.svg": "/portfolio-website/static/media/work.1eb06c16.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3b1c52a1.js",
+    "static/js/2.1a45c695.chunk.js",
+    "static/css/main.bd56963a.chunk.css",
+    "static/js/main.e5361975.chunk.js"
+  ]
+}
