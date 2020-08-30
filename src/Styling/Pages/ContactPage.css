@@ -67,6 +67,12 @@
 .contact-container {
     width: 70%;
     display: block;
+    margin-top: 30px;
+}
+
+.contact-container.lightMode {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
 }
 
 .contact-container .row100 {
@@ -173,9 +179,135 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 50px;
 }
 
 .contact-form button {
     border: none;
+}
+
+/* Social Icons */
+.social-icons-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+}
+
+.social-icons-list ul {
+    position: absolute;
+    display: flex;
+    bottom: 3em;
+}
+
+.social-icons-list ul li {
+    position: relative;
+    list-style: none;
+    margin: 0 4em;
+    cursor: pointer;
+}
+
+.social-icons-list ul li .social-icon {
+    text-decoration: none;
+    font-size: 2.5em;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.social-icon.facebook:hover {
+    color: #3B5998;
+    text-shadow: 2px 2px #3B5998;
+}
+
+.social-icon.linkedin:hover {
+    color: #0E76A8;
+    text-shadow: 2px 2px #0E76A8;
+}
+
+.social-icon.github:hover {
+    color: #000;
+    text-shadow: 2px 2px #000;
+}
+
+.social-icon.gmail:hover {
+    color: #D44638;
+    text-shadow: 2px 2px #D44638;
+}
+
+.social-icon.phone:hover {
+    color: #32CD32;
+    text-shadow: 2px 2px #32CD32;
+}
+
+@media (max-width: 700px) {
+    .social-icons-list ul {
+        bottom: 1.5em;
+    }
+    
+    .social-icons-list ul li {
+        margin: 0 1.25em;
+    }
+    
+    .social-icons-list ul li .social-icon {
+        font-size: 1.75em;
+    }
+}
+
+.EmailIconHoverText {
+    display: none;
+    text-align: center;
+    padding-top: 1.5em;
+    font-size: 1.25em;
+    color: #D44638;
+    text-shadow: 2px 2px 8px black;
+    animation: fadeIn 0.5s linear;
+}
+
+.PhoneIconHoverText {
+    display: none;
+    text-align: center;
+    padding-top: 1.5em;
+    font-size: 1.25em;
+    color: #32CD32;
+    text-shadow: 2px 2px 8px black;
+    animation: fadeIn 0.5s linear;
+}
+
+.copiedToClickboardMsg {
+    display: none;
+    animation: fadeIn 0.5s linear;
+}
+
+.EmailIconHoverText.emailHovered {
+    display: block;
+}
+
+.copiedToClickboardMsg.copied {
+    display: initial;
+}
+
+.PhoneIconHoverText.phoneHovered {
+    display: block;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-height: 700px) {
+    .EmailIconHoverText, .PhoneIconHoverText {
+        display: none;
+    }
+
+    .gmail-list-item, .phone-list-item {
+        display: none;
+    }
 }

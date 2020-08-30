@@ -14,6 +14,22 @@ function ProjectsPage(props) {
             <div className="card-container">
                 <ProjectCard 
                     ProjectType="Group Project"
+                    ProjectTitle="Swift Realtime Chat App"
+                    ProjectTechnologies="Swift, Firebase, UIKit"
+                    ProjectDate="Apr 2020 - May 2020"
+                    BulletPointList={[
+                        "Implemented authentication aspect of application (Create Account, Login/Out)",
+                        "Created and designed user interface and user experience flow of application",
+                        "Added CRUD functionalites, allowing users to message one another in real time"
+                    ]}
+                    DemoLink=""
+                    CodeLink="https://github.com/jeffersonly/Swift-RealTime-Chat-App"
+                />
+            </div>
+
+            <div className="card-container">
+                <ProjectCard 
+                    ProjectType="Group Project"
                     ProjectTitle="Celebrity Recognition Application"
                     ProjectTechnologies="React, AWS Amplify (Various Services)"
                     ProjectDate="Oct 2019 - Nov 2019"
