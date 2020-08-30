@@ -11,7 +11,7 @@ import storage from 'local-storage-fallback'; //used for local storage (store da
 //get theme stored in local storage if it exists
 function getInitialTheme() {
     const savedTheme = storage.getItem('theme'); //look through storage for theme
-    return savedTheme ? JSON.parse(savedTheme) : { darkMode: false } //parse and get theme if it exists, if not default to light
+    return savedTheme ? JSON.parse(savedTheme) : { darkMode: true } //parse and get theme if it exists, if not default to light
 }
 
 function App() {
