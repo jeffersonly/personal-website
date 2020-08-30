@@ -3,9 +3,8 @@ import React, { useState, useEffect } from 'react';
 
 import NavBar from './Navigation/NavBar'; //navigation bar
 
-import history from './Routing/history';
 import Routing from './Routing/Routing';
-import { Router } from 'react-router-dom'; //router encapsulates all of the application (for routing)
+import { BrowserRouter } from 'react-router-dom'; //router encapsulates all of the application (for routing)
 
 import storage from 'local-storage-fallback'; //used for local storage (store dark/light mode)
 
@@ -35,13 +34,13 @@ function App() {
 
     return (
         <div className="App">
-            <Router history={history}>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Routing theme={theme} />
                 <NavBar 
                     onModeChange={() => setTheme({...theme, darkMode: !theme.darkMode})}
                     initialTheme={theme}
                 />
-            </Router>
+            </BrowserRouter>
         </div>
     );
 }
