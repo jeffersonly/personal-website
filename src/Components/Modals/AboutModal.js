@@ -48,7 +48,7 @@ function AboutModal(props) {
                         </h2>
                         <h2>
                             At the moment, I enjoy playing Valorant with my friends. 
-                            I believe that games provide a means of challenge oneself as they require strategical thinking, 
+                            I believe that games provide a means to challenge oneself as they require strategical thinking, 
                             communication skills, and time management.
                         </h2>
                     </TabPanel>
