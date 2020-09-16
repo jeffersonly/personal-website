@@ -54,7 +54,7 @@ function ProjectsPage(props) {
                         "Implemented CRUD functionality as well as file upload and download",
                         "Developed using AWS (Amplify, Cognito, DynamoDB, S3, Cloudfront), React.js, and GraphQL"
                     ]}
-                    DemoLink="d3rprkps2q5szo.cloudfront.net"
+                    DemoLink="https://d3rprkps2q5szo.cloudfront.net/"
                     CodeLink="https://github.com/jeffersonly/Mini-Dropbox-Project"
                 />
             </div>
