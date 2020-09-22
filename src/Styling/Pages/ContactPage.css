@@ -257,7 +257,7 @@
     padding-top: 1.5em;
     font-size: 1.25em;
     color: #D44638;
-    text-shadow: 2px 2px 8px black;
+    text-shadow: 2px 2px 20px black;
     animation: fadeIn 0.5s linear;
 }
 
@@ -267,7 +267,7 @@
     padding-top: 1.5em;
     font-size: 1.25em;
     color: #32CD32;
-    text-shadow: 2px 2px 8px black;
+    text-shadow: 2px 2px 20px black;
     animation: fadeIn 0.5s linear;
 }
 
@@ -305,4 +305,13 @@
     .gmail-list-item, .phone-list-item {
         display: none;
     }
+}
+
+
+.social-icons-list {
+    display: flex !important;
+}
+
+#menu_social, .article-social, .share-menu, #xing-share, .fbContainer, .share-item, a[href^="http://twitter.com/home?"], .share-facebook, .social-label, .button-pinterest, .share-page, .socialButton, .icon-social-facebook, .sharrre, #sharebuttons, .follow-label, .g-plusone, a[title="facebook"], .b-topic__socials, .btn-google-plus, .fb-likebox, .shareLeft, .social-bar-container, .icon-gplus, .j-social-button, .pinButton, .shareContainer, .sharebutton, .social-sidebar, a[href*="facebook.com/sharer/sharer.php?"], #subscribe-options, .facebook-link, .group_share, .icon-fb, .twitterWrapper, a[href^="https://www.linkedin.com/cws/share?"], .share-left, .social-icon, .instagram-follow, .share_panel, a[href^="http://vkontakte.ru/share.php?"], a[title="Twitter"], #top_share, #vk_invite_wrapper, .btn-facebook, .mod-socialmedia, a[href^="http://facebook.com/sharer.php?"], #share-reddit, #social-header, #socialWrapper, .FollowButton, .icon-twitter, .sharebox, #social-container, img[alt="Youtube"], #facebook-icon, .twitter.icon, a[href^="http://www.stumbleupon.com/submit?"], .fa-facebook-square, .b-social, .pinterest-button, .sharing-buttons, .social-16, .youtube_subscribe_module, .itemSocialSharing, .share-panel, .shareBox, .social-column, .share-box, .share-with-friends, .social-buttons, .social-wrap, .socialshare, a[href^="https://twitter.com/home/?status="], img[alt="Vine"], .addthisbuttons, .custom-sharing-link, .fb-link, .twitter-icon, a[href^="http://plus.google.com/share"], img[title="LinkedIn"], .arqam-widget-counter, .ico-facebook, .youtube-link, a[href="//www.reddit.com/submit"], .article-social-container, .content-share-wrap, .digg-button, .socialbox, .subscribe-text, #share-box, .facebook-container, .social-share-count, .social-google, #vk_recommended, .icon-youtube, .social-panel, img[title="Facebook"], .SocialButton, .fb-box, .icon-google-plus-sign, .share-popup, .social-count, #advancedsocialwidget, .post-share-panel, .btnFacebook, .shareText, .social-btn, a[href^="http://www.tumblr.com/share/"], .btn-reddit, .fb-recommendations, .social-links, .sprite-twitter, a[href^="http://twitter.com/intent/tweet"], .social-sharing, .socialButtons, .socialbuttons, .detail-share-item, .share-wrap, .social-wrapper, .share-bar, .social-login, .twitter-timeline, .facebookLikeBox, .follow-bar, .social_row, a[href^="http://reddit.com/submit"], #facebook_like_button_holder, #share_link, .sharebuttons, a[href="https://twitter.com/share"], #share-links, .linkedin.icon, .reddit_button, .share-buttons, .subscribe-widget, .bottom-social, .follow-text, .share-video, .social-button, a[href^="https://facebook.com/sharer.php?"], .btn-social, #socialContainer, #vk_right, .block-socialmedia, .follow_twitter, .google-btn, .sprite-facebook, #share_feed, #social-wrapper, .fb-btn, .share-container, .share_bottom, .social_links_top, .fb_edge_widget_with_comment, #socials, .fb-recommendations-bar, .like-box, .share-text, .social_bar, .addthis_32x32_style, .fb-icon, .fblike, .follow_box, .icon-vimeo, .share-fb, .social-facebook, .twitter-feed, #share_container, .icon-github, .photo-share, .share-list, .share-wrapper, a[href^="https://twitter.com/intent/follow?"], .fb-xfbml-parse-ignore, .icon_gplus, .social-bottom, #sharebar, .btn-gplus, .custom-social, .shareLink, .social-popup, .social-tab, .social__twitter, .socialmedia, #digg-widget, #share_links, .fb-dialog, .pinit-btn, .std-social, .-facebook, .share-link, .social_twitter, #sharebox, .article_share, .socialMedia, a[href^="http://www.digg.com/submit?"], .btn-fb, .google-plus, .pinterest-share-button {
+    display: flex !important;
 }

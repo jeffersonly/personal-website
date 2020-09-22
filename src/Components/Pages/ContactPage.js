@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import CircleParticles from '../Particles/CircleParticles';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookF, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faMailBulk, faMobile } from '@fortawesome/free-solid-svg-icons';
 
 function ContactPage(props) {
@@ -93,7 +93,7 @@ function ContactPage(props) {
                     </li>
 
                     <li onClick={() => window.open("https://www.linkedin.com/in/jeffersonly/", '_blank')}>
-                        <FontAwesomeIcon icon={faLinkedinIn} className="social-icon linkedin" />
+                        <FontAwesomeIcon icon={faLinkedin} className="social-icon linkedin" />
                     </li>
 
                     <li onClick={() => window.open("https://github.com/jeffersonly", '_blank')}>
@@ -109,7 +109,7 @@ function ContactPage(props) {
                             onMouseLeave={unhoverEmail}
                         />
                     </li>
-
+                    
                     <li className="phone-list-item">
                         <a href="tel:1-408-387-4709">
                             <FontAwesomeIcon 
