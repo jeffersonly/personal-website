@@ -39,9 +39,6 @@ function HomePage(props) {
                             About Me
                         </div>
                     </div>
-
-                    
-
                 </div>
 
                 <div className="modal-container">

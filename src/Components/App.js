@@ -8,6 +8,8 @@ import { BrowserRouter } from 'react-router-dom'; //router encapsulates all of t
 
 import storage from 'local-storage-fallback'; //used for local storage (store dark/light mode)
 
+import { AnimatePresence } from 'framer-motion'; //animate route transitions
+
 //get theme stored in local storage if it exists
 function getInitialTheme() {
     const savedTheme = storage.getItem('theme'); //look through storage for theme
@@ -35,11 +37,13 @@ function App() {
     return (
         <div className="App">
             <BrowserRouter basename={process.env.PUBLIC_URL}>
-                <Routing theme={theme} />
-                <NavBar 
-                    onModeChange={() => setTheme({...theme, darkMode: !theme.darkMode})}
-                    initialTheme={theme}
-                />
+                <AnimatePresence exitBeforeEnter>
+                    <Routing theme={theme} />
+                    <NavBar 
+                        onModeChange={() => setTheme({...theme, darkMode: !theme.darkMode})}
+                        initialTheme={theme}
+                    />
+                </AnimatePresence>
             </BrowserRouter>
         </div>
     );

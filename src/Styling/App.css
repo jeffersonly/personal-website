@@ -12,13 +12,15 @@
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
-    background: black;
+    /* width: 5px;
+    background: black; */
+    display: none;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: white;
-    border-radius: 20px;
+    /* background: white;
+    border-radius: 20px; */
+    display: none;
 }
 
 /* .banner {
