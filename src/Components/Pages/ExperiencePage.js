@@ -45,7 +45,7 @@ function ExperiencePage(props) {
                             <ExperienceCard 
                                 JobTitle="Predictive Services (IoT) Software Engineering Intern"
                                 JobType="Internship"
-                                JobLocation="Concrete Shells | San Jose, CA"
+                                JobLocation="Carl Zeiss X-ray Microscopy | Pleasanton, CA"
                                 JobDate="Jun 2020 - Present"
                                 BulletPointList={[
                                     "Implemented functional services using Javascript on the ThingWorx platform",
