@@ -4,7 +4,7 @@ import React from 'react';
 function ExperienceCard(props) {
     function getListDetails() {
         if(props.BulletPointList) {
-            return props.BulletPointList.map((details, i) => <li key={i}>{details}</li>)
+            return props.BulletPointList.map((details, i) => <li className="bulletpoint-text" key={i}>{details}</li>)
         }
     }
 

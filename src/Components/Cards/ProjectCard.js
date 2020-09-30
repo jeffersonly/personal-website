@@ -4,7 +4,7 @@ import React from 'react';
 function ProjectCard(props) {
     function getListDetails() {
         if(props.BulletPointList) {
-            return props.BulletPointList.map((details, i) => <li key={i}>{details}</li>)
+            return props.BulletPointList.map((details, i) => <li className="bulletpoint-text" key={i}>{details}</li>)
         }
     }
 
@@ -49,7 +49,7 @@ function ProjectCard(props) {
             <div className="content">
                 <h2 className="project-type">{props.ProjectType}</h2>
                 <h3 className="project-title">{props.ProjectTitle}</h3>
-                <h4 className="technologies">{props.ProjectTechnologies}</h4>
+                {/* <h4 className="technologies">{props.ProjectTechnologies}</h4> */}
                 <h4 className="project-date">{props.ProjectDate}</h4>
             </div>
 

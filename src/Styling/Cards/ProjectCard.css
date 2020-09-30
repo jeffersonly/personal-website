@@ -30,12 +30,14 @@
 }
 
 .card .content h2.project-type {
+    font-size: 1em;
     right: 0.5em;
     top: 2em;
 }
 
 .card:hover .content h2.project-type {
     opacity: 1;
+    font-size: 1em;
     transform: translateY(-15px);
 }
 
@@ -44,30 +46,39 @@
 }
 
 .card .bulletpoints {
-    padding: 10px;
-    margin: 20px;
+    padding: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
     color: white;
     font-size: 1.15em;
+    margin-top: 0;
 }
 
-.technologies {
+/* .technologies {
+    display: flex;
+    float: left;
+    font-size: 1.15em;
+} */
+
+.project-date {
+    font-size: 1.15em;
     display: flex;
     float: left;
 }
 
-.project-date {
-    display: flex;
-    float: right;
-}
-
 .buttonContainer {
     display: flex;
-    float: right;
+    margin-left: auto;
 }
 
 .buttonContainer .ledButton {
     margin-left: 10px;
+    padding: 5px 30px;
     -webkit-box-reflect: initial;
+}
+
+.bulletpoint-text {
+    font-size: 0.8em;
 }
 
 @media (max-width: 450px) {
@@ -77,14 +88,14 @@
 
     .card .bulletpoints {
         font-size: 1em;
-        padding-top: 35px;
+        padding-top: 10px;
     }
 
-    .technologies {
+    /* .technologies {
         padding-top: 10px;
         font-size: 1em;
         float: left;
-    }
+    } */
     
     .project-date {
         font-size: 1em;

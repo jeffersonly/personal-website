@@ -54,7 +54,7 @@
 /* Led Buttons */
 .ledButton {
     text-align: center;
-    width: 150px;
+    width: fit-content;
     position: relative;
     padding: 10px 30px;
     color: white;

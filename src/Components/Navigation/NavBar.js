@@ -1,14 +1,12 @@
 import '../../Styling/Navigation/NavBar.css';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; //links for navigation
-
 import {ReactComponent as HomeSVG} from '../../Images/SVGs/home.svg';
 import {ReactComponent as ExperienceSVG}from '../../Images/SVGs/work.svg';
 import {ReactComponent as ContactSVG} from '../../Images/SVGs/contact.svg';
 import {ReactComponent as MoonSVG} from '../../Images/SVGs/moon.svg';
 import {ReactComponent as SunSVG} from '../../Images/SVGs/sun.svg';
 import {ReactComponent as ResumeSVG} from '../../Images/SVGs/resume.svg';
-
 import Resume from '../../Resume/Resume.pdf';
 
 function NavBar(props) {

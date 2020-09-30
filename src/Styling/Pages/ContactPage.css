@@ -62,7 +62,7 @@
 .contact-container {
     width: 70%;
     display: block;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .contact-container.lightMode {
@@ -195,7 +195,7 @@
 .social-icons-list ul {
     position: absolute;
     display: flex;
-    bottom: 3em;
+    bottom: 2.5em;
 }
 
 .social-icons-list ul li {
@@ -251,43 +251,6 @@
     }
 }
 
-.EmailIconHoverText {
-    display: none;
-    text-align: center;
-    padding-top: 1.5em;
-    font-size: 1.25em;
-    color: #D44638;
-    text-shadow: 2px 2px 20px black;
-    animation: fadeIn 0.5s linear;
-}
-
-.PhoneIconHoverText {
-    display: none;
-    text-align: center;
-    padding-top: 1.5em;
-    font-size: 1.25em;
-    color: #32CD32;
-    text-shadow: 2px 2px 20px black;
-    animation: fadeIn 0.5s linear;
-}
-
-.copiedToClickboardMsg {
-    display: none;
-    animation: fadeIn 0.5s linear;
-}
-
-.EmailIconHoverText.emailHovered {
-    display: block;
-}
-
-.copiedToClickboardMsg.copied {
-    display: initial;
-}
-
-.PhoneIconHoverText.phoneHovered {
-    display: block;
-}
-
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -298,6 +261,10 @@
 }
 
 @media (max-height: 700px) {
+    .social-icons-list ul {
+        bottom: 0.15em;
+    }
+
     .EmailIconHoverText, .PhoneIconHoverText {
         display: none;
     }
