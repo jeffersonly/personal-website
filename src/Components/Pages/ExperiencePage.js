@@ -46,9 +46,9 @@ function ExperiencePage(props) {
                             JobLocation="Carl Zeiss X-ray Microscopy | Pleasanton, CA"
                             JobDate="Jun 2020 - Present"
                             BulletPointList={[
-                                "Implemented functional services using Javascript on the ThingWorx platform",
-                                "Leveraged pre-existing services to manipulate data from systems",
-                                "Analyzing system data to predict source changes and the lifecycle of Versa systems"
+                                "Implemented functional services using Javascript on the ThingWorx Platform",
+                                "Leveraged ThingWorx services to manipulate data from dozens of Versa systems",
+                                "Analyzed system data to predict source changes and the lifecycle of Versa systems"
                             ]}
                         />
                     </div>
@@ -59,9 +59,9 @@ function ExperiencePage(props) {
                             JobLocation="Concrete Shells | San Jose, CA"
                             JobDate="May 2019 - Sep 2019"
                             BulletPointList={[
-                                "Moved website base off of Wordpress to develop using custom code",
-                                "Created new website for company using HTML, CSS, JavaScript, Jquery, and various JS libraries",
-                                "Optimized loading/rendering times using google chrome developer tools and google page insights"
+                                "Developed and managed responsive website using HTML, CSS, Jquery, Javascript, and JS libraries",
+                                "Recreated wordpress based site to fully custom code, hosts original code on AWS EC2 instance",
+                                "Quality tested website to optimize rendering time using Chrome DevTools"
                             ]}
                         />
                     </div>

@@ -14,6 +14,22 @@ function ProjectsPage(props) {
             <div className="card-container">
                 <ProjectCard 
                     ProjectType="Group Project"
+                    ProjectTitle="Fintrack"
+                    ProjectTechnologies="AWS, GraphQL, HTML/CSS, JS, React"
+                    ProjectDate="Sep 2020 - Dec 2020"
+                    BulletPointList={[
+                        "Led a team of engineers to implement a fully functional, scalable web application as the technical lead",
+                        "Designed the landing page and implemented various React components used throughout the application",
+                        " Provided technical guidance and support for team members to meet project deadlines on time"
+                    ]}
+                    DemoLink="https://master.d191rl4e83chd.amplifyapp.com/"
+                    CodeLink="https://github.com/jeffersonly/Fintrack"
+                />
+            </div>
+            
+            <div className="card-container">
+                <ProjectCard 
+                    ProjectType="Group Project"
                     ProjectTitle="Swift Realtime Chat App"
                     ProjectTechnologies="Swift, Firebase, UIKit"
                     ProjectDate="Apr 2020 - May 2020"
