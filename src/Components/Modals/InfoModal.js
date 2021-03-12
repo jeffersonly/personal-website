@@ -24,25 +24,25 @@ function InfoModal(props) {
                             <Tab eventKey="Interests" title="Interests">
                                 <div className="tab-info-container">
                                     <p className="tab-info">
-                                        I'm on track to graduate in December 2020 and will hopefully secure a full time job offer before so. 
-                                        I'm primarily interested in Web development, Artificial Intelligence, Machine Learning, Virtual Reality, 
-                                        Game Development, and CyberSecurity. However, I'm open to all fields of Software Development and I am 
-                                        trying to soak up as much knowledge as possible.
+                                        I graduated from SJSU in December of 2020 and am excited about my future endeavors!
+                                        I code primarily in Java and Javascript however, I love learning new technologies.
+                                        My main fields of interest are Web Development, CyberSecurity, and Machine Learning. 
+                                        I would love to secure a full time job that provides me with the flexibility to learn new technologies and build connections!
                                     </p>
                                 </div>
                             </Tab>
                             <Tab eventKey="Education" title="Education">
                                 <div className="tab-info-container">
                                     <p className="tab-info">
-                                        I'm currently a fourth year Software Engineering student at San Jose State University! 
-                                        I'm involved in organizations such as MEP (Mesa Engineering Program), 
+                                        I'm a SJSU Alumni who majored in Software Engineering!
+                                        I was involved in organizations such as MEP (Mesa Engineering Program), 
                                         SASE (Society of Asian Scientists and Engineers), 
                                         SCE (Software and Computer Engineering Society), and
-                                        EOP (Educational Oppourtunity Program). 
+                                        EOP (Educational Oppourtunity Program) during my time at SJSU.
                                         <br/><br/>
-                                        I enjoy the sense of community I get from within these organizations. 
+                                        I enjoyed the sense of community I got from within these organizations and keep in touch with the members even though I graduated.
                                         Most of my friends that I've made in college were through these orgs/clubs. 
-                                        We work on professional development, club projects, and focus on social interaction.
+                                        We worked on professional development, projects, and learned lots of new things with each other!
                                     </p>
                                 </div>
                             </Tab>
@@ -53,7 +53,7 @@ function InfoModal(props) {
                                         In one way or another, I believe that a good balance between the four results in a fun, healthy, 
                                         and maintainable lifestyle. I also enjoy giving back to the community through volunteering!
                                         <br/><br/>
-                                        At the moment, I enjoy playing Valorant with my friends. 
+                                        At the moment, I enjoy playing Apex Legends with my friends. 
                                         I believe that games provide a means to challenge oneself as they require strategical thinking, 
                                         communication skills, and time management.
                                     </p>
