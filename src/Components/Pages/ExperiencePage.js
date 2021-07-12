@@ -43,12 +43,14 @@ function ExperiencePage(props) {
                         <ExperienceCard 
                             JobTitle="Predictive Services (IoT) Software Engineering Intern"
                             JobType="Internship"
-                            JobLocation="Carl Zeiss X-ray Microscopy | Pleasanton, CA"
+                            JobLocation="Carl Zeiss X-ray Microscopy | Dublin, CA - Remote"
                             JobDate="Jun 2020 - Present"
                             BulletPointList={[
-                                "Implemented functional services using Javascript on the ThingWorx Platform",
-                                "Leveraged ThingWorx services to manipulate data from dozens of Versa systems",
-                                "Analyzed system data to predict source changes and the lifecycle of Versa systems"
+                                "Implemented functional services using Javascript on the ThingWorx platform.",
+                                "Updated ThingWorx services to effectively display data and optimize workflow for engineers.",
+                                "Analyzed system data and utilized linear regression to predict source changes and lifecycle of Versa systems.",
+                                "Data cleaned aggregated amounts of data from different systems to display potential trends.",
+                                "Adjusted user interface of internal tools to increase intuitiveness and provide a better user experience for service engineers."
                             ]}
                         />
                     </div>
@@ -59,9 +61,9 @@ function ExperiencePage(props) {
                             JobLocation="Concrete Shells | San Jose, CA"
                             JobDate="May 2019 - Sep 2019"
                             BulletPointList={[
-                                "Developed and managed responsive website using HTML, CSS, Jquery, Javascript, and JS libraries",
-                                "Recreated wordpress based site to fully custom code, hosts original code on AWS EC2 instance",
-                                "Quality tested website to optimize rendering time using Chrome DevTools"
+                                "Developed and deployed responsive website using HTML/CSS, jQuery, Javascript.",
+                                "Utilized AWS EC2 to deploy existing WordPress based site and incorporated custom code.",
+                                "Optimized rendering times using Google Chrome Developer Tools and Google Page Insights."
                             ]}
                         />
                     </div>
@@ -72,9 +74,9 @@ function ExperiencePage(props) {
                             JobLocation="VIA Alliance Technologies | Fremont, CA"
                             JobDate="Jan 2019 - Apr 2019"
                             BulletPointList={[
-                                "Downloaded and installed software programs into different systems & motherboards",
-                                "Black box tested computer motherboard programs UI on TVs and desktops",
-                                "Collaborated with engineers to track bugs and report them to RnD team"
+                                "Downloaded and installed software programs into different systems & motherboards.",
+                                "Black box tested computer motherboard programs UI on TVs and desktops.",
+                                "Collaborated with senior engineers to track bugs and report them to the RnD team."
                             ]}
                         />
                     </div>
@@ -85,9 +87,9 @@ function ExperiencePage(props) {
                             JobLocation="Spotmesolutions LLC | San Jose, CA"
                             JobDate="Aug 2018 - Dec 2018"
                             BulletPointList={[
-                                "Designed and implemented UI for a mobile application",
-                                "Used expo libraries and open source github repos + libraries for some functionalities",
-                                "Built application using React.js, React Native, and Redux"
+                                "Designed and implemented UI for a mobile application.",
+                                "Used expo libraries and open source github repos + libraries for some functionalities.",
+                                "Built application using React.js, React Native, and Redux."
                             ]}
                         />
                     </div>
