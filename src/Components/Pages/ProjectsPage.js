@@ -18,11 +18,11 @@ function ProjectsPage(props) {
                     ProjectTechnologies="AntD, Express.js, GSAP, JS, Node.js, React, Redux"
                     ProjectDate="Mar 2021 - May 2021"
                     BulletPointList={[
-                        "Led a team of engineers to implement a fully functional, highly scalable web application as the technical lead.",
-                        "Provided technical guidance and support for team members to meet project deadlines on time.",
-                        "Utilized AWS Amplify services to handle user authentication, text recognition, and data storage services.",
-                        "Implemented user interface for landing page and various components using React and styling libraries such as Material-UI/Bootstrap.",
-                        "Stored images to S3 with a relational field in DynamoDB using GraphQL after processing them with AWS Textract."
+                        "Designed and built a responsive full-stack MERN application with Redux for efficient state management.",
+                        "Implemented authentication functionalities and an administrative portal to manage existing users.",
+                        "Implemented authentication functionalities for future reference and for other developers to utilize.",
+                        "Documentation and technologies used can be found here: https://github.com/jeffersonly/mern-authentication-boilerplate.",
+                        "Deployed application to be hosted on Heroku: https://mern-auth-bp.herokuapp.com/."
                     ]}
                     DemoLink="https://mern-auth-bp.herokuapp.com/"
                     CodeLink="https://github.com/jeffersonly/mern-authentication-boilerplate"

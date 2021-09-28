@@ -44,7 +44,7 @@ function ExperiencePage(props) {
                             JobTitle="Predictive Services (IoT) Software Engineering Intern"
                             JobType="Internship"
                             JobLocation="Carl Zeiss X-ray Microscopy | Dublin, CA - Remote"
-                            JobDate="Jun 2020 - Present"
+                            JobDate="Jun 2020 - Aug 2021"
                             BulletPointList={[
                                 "Implemented functional services using Javascript on the ThingWorx platform.",
                                 "Updated ThingWorx services to effectively display data and optimize workflow for engineers.",
